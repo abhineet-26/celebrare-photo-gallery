@@ -1,0 +1,5 @@
+{
+  "name": "Celebrare Photo Gallery",
+  "description": "A responsive photo gallery fetching from Picsum API, with search and favourites.",
+  "requestFramePermissions": []
+}
