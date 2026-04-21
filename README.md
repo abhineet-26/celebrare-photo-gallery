@@ -1,20 +1,33 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Photo Gallery Web App
 
-# Run and deploy your AI Studio app
+A high-performance, responsive image gallery built with **React 19**, **Vite**, and **Tailwind CSS**. This project demonstrates advanced React patterns for data fetching, state management, and performance optimization.
 
-This contains everything you need to run your app locally.
+## 🚀 Key Features
+* **Custom Hooks:** Business logic extracted into `useFetchPhotos` (API lifecycle) and `useFavourites` (state logic).
+* **State Management:** Utilizes the `useReducer` hook for complex "favourites" logic, providing more predictable state transitions than `useState`.
+* **Real-time Search:** A local filter that allows users to search by author name instantly without additional API overhead.
+* **Persistent Storage:** Favorites are saved to `localStorage`, ensuring data persists even after a page refresh.
+* **Performance Optimized:** * `useMemo` handles the filtering logic to prevent expensive re-calculations on every render.
+    * `useCallback` stabilizes event handlers to prevent unnecessary component re-renders.
+* **Responsive Grid:** A fluid Tailwind-powered layout (4 columns on Desktop, 2 on Tablet, 1 on Mobile).
 
-View your app in AI Studio: https://ai.studio/apps/6db642bd-5d7d-484d-a10a-0510bd851caa
+## 🛠️ Technical Stack
+* **Framework:** React 19 (Vite)
+* **Styling:** Tailwind CSS (Zero external UI libraries used)
+* **API:** [Lorem Picsum](https://picsum.photos/)
+* **State:** useReducer + useContext (optional) + localStorage
 
-## Run Locally
+## 📦 Getting Started
 
-**Prerequisites:**  Node.js
+1. **Install dependencies**:
+   ```bash
+   npm install
+2. **Run the development server**:
 
+   ```Bash
+   npm run dev
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+3. **Build for production**:
+
+   ```Bash
+   npm run build
